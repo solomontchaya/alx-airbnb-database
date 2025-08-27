@@ -1,7 +1,7 @@
 # Airbnb Database ERD Specification
 
 ## Entities and Attributes
-![Airbnb Database ERD Diagram](https://github.com/your-username/airbnb-db-repo/blob/main/images/airbnb_erd.png?raw=true)
+![Airbnb Database ERD Diagram](AirBNB.jpg)
 ### User
 - `user_id` (PK)
 - `first_name`
