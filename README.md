@@ -88,7 +88,7 @@ The system manages Users, Properties, Bookings, Payments, Reviews, and Messages,
 - **3NF**: Removed transitive dependencies.
   - `total_price` in Bookings is derived dynamically from `DATEDIFF(end_date, start_date) * pricepernight` to avoid redundancy.
 
-✅ **Result**: Database is fully normalized and free of redundancy or anomalies.
+**Result**: Database is fully normalized and free of redundancy or anomalies.
 
 ---
 
