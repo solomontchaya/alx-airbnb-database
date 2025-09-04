@@ -1,3 +1,8 @@
+-- ===============================================================
+-- Query with WHERE and AND conditions, and EXPLAIN for performance
+-- ===============================================================
+
+EXPLAIN
 SELECT
     b.booking_id,
     b.booking_date,
@@ -16,4 +21,9 @@ JOIN
 JOIN 
     property p ON b.property_id = p.property_id
 JOIN 
-    payment pay ON b.booking_id = pay.booking_id;
+    payment pay ON b.booking_id = pay.booking_id
+WHERE 
+    b.booking_date >= '2025-01-01'   -- filter bookings from Jan 1, 2025
+    AND p.price_per_night <= 200     -- filter properties with price <= 200
+ORDER BY 
+    b.booking_date DESC;             -- order by latest bookings first
